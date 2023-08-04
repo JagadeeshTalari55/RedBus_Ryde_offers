@@ -9,8 +9,10 @@
 // } from "reactstrap";
 import "./App.css";
 import Card from "./Card";
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 
+const arr1 = [1, 2, 3, 4, 5];
 function App() {
   return (
     // <div>
@@ -87,7 +89,10 @@ function App() {
     //   </Row>
     // </div>
     <div className="container">
-      <Card heading5="FLAT" heading2="5%" bgColor="#000"></Card>
+      {arr1.map((item, i) => {
+        <Card key={i} heading5="FLAT" heading2="5%" bgColor="#000"></Card>;
+      })}
+
       <Card heading5="INSTANT" heading2="200" bgColor="#CE7700"></Card>
       <Card heading5="INSTANT" heading2="500" bgColor="#5E3FB0"></Card>
       <Card heading5="INSTANT" heading2="1000" bgColor="#BB355Fs"></Card>
