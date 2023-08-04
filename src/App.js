@@ -90,7 +90,9 @@ function App() {
     // </div>
     <div className="container">
       {arr1.map((item, i) => {
-        <Card key={i} heading5="FLAT" heading2="5%" bgColor="#000"></Card>;
+        return (
+          <Card key={i} heading5="FLAT" heading2="5%" bgColor="#000"></Card>
+        );
       })}
 
       <Card heading5="INSTANT" heading2="200" bgColor="#CE7700"></Card>
